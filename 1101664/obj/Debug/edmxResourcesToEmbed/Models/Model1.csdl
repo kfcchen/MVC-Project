@@ -1,0 +1,18 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="Allrole" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
+  <EntityType Name="TableAllroles1101664">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="Int32" Nullable="false" />
+    <Property Name="name" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="category" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="age" Type="Int32" />
+    <Property Name="height" Type="Int32" />
+    <Property Name="ability" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="attribute" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+  </EntityType>
+  <EntityContainer Name="AllroleEntities" annotation:LazyLoadingEnabled="true">
+    <EntitySet Name="TableAllroles1101664" EntityType="Self.TableAllroles1101664" />
+  </EntityContainer>
+</Schema>

@@ -1,0 +1,17 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="Login.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2012" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+  <EntityType Name="Tablelogins1101664">
+    <Key>
+      <PropertyRef Name="account" />
+    </Key>
+    <Property Name="account" Type="int" Nullable="false" />
+    <Property Name="password" Type="nvarchar" MaxLength="50" />
+    <Property Name="name" Type="nvarchar" MaxLength="50" />
+    <Property Name="email" Type="nvarchar" MaxLength="50" />
+    <Property Name="phonenumber" Type="nvarchar" MaxLength="50" />
+    <Property Name="address" Type="nvarchar" MaxLength="50" />
+  </EntityType>
+  <EntityContainer Name="LoginStoreContainer">
+    <EntitySet Name="Tablelogins1101664" EntityType="Self.Tablelogins1101664" Schema="dbo" store:Type="Tables" />
+  </EntityContainer>
+</Schema>

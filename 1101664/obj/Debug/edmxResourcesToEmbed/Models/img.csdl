@@ -1,0 +1,14 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="img" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
+  <EntityType Name="Tableimages1101664">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="id" Type="Int32" Nullable="false" />
+    <Property Name="name" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="image" Type="Binary" MaxLength="Max" FixedLength="false" />
+  </EntityType>
+  <EntityContainer Name="imgEntities" annotation:LazyLoadingEnabled="true">
+    <EntitySet Name="Tableimages1101664" EntityType="Self.Tableimages1101664" />
+  </EntityContainer>
+</Schema>

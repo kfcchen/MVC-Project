@@ -1,0 +1,17 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="Login" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
+  <EntityType Name="Tablelogins1101664">
+    <Key>
+      <PropertyRef Name="account" />
+    </Key>
+    <Property Name="account" Type="Int32" Nullable="false" />
+    <Property Name="password" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="name" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="email" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="phonenumber" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="address" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+  </EntityType>
+  <EntityContainer Name="loginEntities" annotation:LazyLoadingEnabled="true">
+    <EntitySet Name="Tablelogins1101664" EntityType="Self.Tablelogins1101664" />
+  </EntityContainer>
+</Schema>
